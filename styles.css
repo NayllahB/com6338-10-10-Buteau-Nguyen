@@ -1,1 +1,18 @@
 /* Use this for all css styling for all webpages (Zoey + Nayllah) */
+
+/* Primary colors all pages */
+:root{
+    --primary-black:#000000;
+    --primary-white:#ffffff;
+    --primary-red:#d8443a;
+    --primary-tan:#e9decd;
+    --primary-lightcream:#f2ece4;
+}
+
+/* Resets default margins and padding */
+* {
+    font-family: 'Poppins', sans-serif; /* Set Poppins as the primary font */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
