@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title> <!--This will be the news webapge (Zoey)-->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This website is about Japanese news">
+  <link rel="stylesheet" href="news.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Japan News Updates</title>
 </head>
+
 <body>
-    
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav__list" id="main-menu">
+        <li><a class="header__nav__link" href="home.html">Home</a></li>
+        <li><a class="header__nav__link" href="culture.html">Culture</a></li>
+        <li><a class="header__nav__link" href="news.html">News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="main__section">
+      <p class="main__sectionUncovering">Uncovering the stories that shape Japan, one news cycle at a time.</h1>
+      <p class="main__section__text">Explore the latest news and trends in Japan by searching for keywords like "Japan cruise," "Fukushima," "ramen," or "cherry."</p>
+      
+      <form>
+        <input name="search" id="news-search" type="text" placeholder="Enter keyword" />
+        <label for="news-search">Enter location</label>
+        <button class="search-button" type="submit">Search</button>
+      </form>
+      <div id="news-container"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright &copy;<span id="date"></span> by Group 1</p>
+  </footer>
+
+  <script src="news.js"></script>
 </body>
 </html>

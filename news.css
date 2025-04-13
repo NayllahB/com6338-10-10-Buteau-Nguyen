@@ -1,0 +1,220 @@
+body {
+    background-image: url(images/filiz-elaerts-J_C3_JpJMms-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {font-family: 'Poppins', sans-serif;}
+  
+/* Header starts */
+.header {
+background-color: white;
+padding: 20px 0;
+}
+
+.header__nav {
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.header__nav__list {
+display: flex;
+list-style: none;
+padding-inline-start: 0;
+}
+
+.header__nav__list li {
+padding: 0 20px;
+text-align: center;
+}
+
+.header__nav__link {
+text-decoration: none;
+color: black;
+font-size: 18px;
+font-weight: 600;
+position: relative;
+}
+
+.header__nav__link::after {
+content: "";
+position: absolute;
+height: 1.5px;
+left: 0;
+bottom: -2px;
+width: 0;
+background-color: black;
+animation-fill-mode: backwards;
+}
+
+.header__nav__link:hover::after {
+animation: underline 0.4s forwards;
+}
+
+@keyframes underline {
+0% {width:0%}
+100% {width:100%}
+}
+/* Header ends */
+
+footer {
+    height: 80px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+}
+
+/* main__section starts */
+.main__section {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.main__sectionUncovering {
+    color: black;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0 80px;
+  }
+
+.main__section__text {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/* main__section ends */
+
+/* Search bar starts */
+form {
+    position: relative;
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+label {/*??????*/
+    pointer-events: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    left: 20%;
+    color: black;
+    transition: 100ms ease-out;
+    visibility: hidden;
+}
+
+.search-button {
+    padding: 10px 24px;
+    background-color: #e9decd;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.search-button:hover {
+    background-color: #e3e3e3;
+}
+/* Search bar ends */
+
+/* #news-container starts */
+#news-container {
+    width: 800px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    margin: 20px;
+    padding: 20px 40px 30px 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.news-card h2 {
+    font-weight: 600;
+}
+
+.news-card p {
+    color:#636363;
+}
+
+.news-card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #d8443a;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.news-card a:hover {
+    color: #636363;
+}
+/* #news-container ends */
+
+
+@media screen and (max-width: 600px) {
+    .header__nav__list {
+        display: block;
+        padding: 25px auto;
+    }
+    .header__nav__list li {
+        padding-top: 5px;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .main__sectionUncovering {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__sectionUncovering {
+        font-size: 32px;
+    }
+    #news-container {
+        width: auto;
+    }
+}
