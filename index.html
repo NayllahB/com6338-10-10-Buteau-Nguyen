@@ -6,9 +6,22 @@
     <title>Welcome</title> <!--This will be the home page (Zoey + Nayllah)-->
     <meta name="description" content="Learn more about Japan"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <header></header>
+    <header>
+        <nav class="header__nav">
+            <ul class="header__nav__list" id="main-menu">
+              <li><a class="header__nav__link" href="index.html">Home</a></li>
+              <li><a class="header__nav__link" href="culture.html">Culture</a></li>
+              <li><a class="header__nav__link" href="news.html">News</a></li>
+            </ul>
+          </nav>
+    </header>
+
     <main class="home_main_content">
         <section class="home_hero">
             <h1>Japan</h1>
@@ -34,6 +47,18 @@
                 </div>
             </div>
         </section>
+
+        <section class="news__section">
+            <div class="div__newsimage">
+              <img class="newsimage" src="images/uran-wang-nO6VKP18GBE-unsplash.jpg" width="400px">
+            </div>
+            <div class="div__newsintro">
+              <h2>Japan News: Stay Informed</h2>
+              <p>Our news section offers a unique perspective on Japan, with articles and analysis from experts and journalists who know the country inside and out.</p>
+              <button class="div__newsintro__button">Learn more</button>
+            </div>
+        </section>
+
         <section class="weather">
             <h2>Traveling to Japan?</h2>
             <p>Take a look at the weather before your trip!</p>
@@ -50,8 +75,11 @@
                 <button type="submit">Search</button>
             </form>
         </section>
+        
     </main>
-    <footer></footer>
+    <footer>
+        <p>Copyright &copy;<span id="date"></span> by Group 1</p>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
