@@ -54,3 +54,17 @@ form.onsubmit = async e => {
     cityWeatherCard(userQuery, searchResultsSectionId)
     
 }
+
+/* Update the copyright year automatically */
+function copyright () {
+    const date = document.getElementById("date");
+    const year = new Date; 
+
+    if (date) {
+        date.textContent = year.getFullYear();
+    }
+}
+
+window.onload = () => {
+    copyright();
+}
