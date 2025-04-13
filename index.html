@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title> <!--This will be the home page (Zoey + Nayllah)-->
+    <title>Welcome</title> <!--This will be the home page (Zoey + Nayllah)-->
+    <meta name="description" content="Learn more about Japan"/>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 <body>
-    
+    <header></header>
+    <main class="home_main_content">
+        <section class="home_hero">
+            <h1>Japan</h1>
+        </section>
+        <section class="home_introduction">
+            <P>Explore the heart of Japanese pop culture and stay updated with the latest news straight from the streets of Japan.</P>
+        </section>
+        <section class="home_pop-culture">
+            <h2>Pop Culture</h2>
+            <p>Learn more about Japan's vibrant pop culture</p>
+            <div class="home_pop-culture_card-container">
+                <div class="home_pop-culture_card">
+                    <a href=""><img src="images/naruto.jpeg" alt="Naruto"></a>
+                    <p>Anime & Manga</p>
+                </div>
+                <div class="home_pop-culture_card">
+                    <a href=""><img src="images/fashion3.jpg" alt="Model posing to showcase outfit"></a>
+                    <p>Fashion</p>
+                </div>
+                <div class="home_pop-culture_card">
+                    <a href=""><img src="images/matcha-roll-cake.jpg" alt="Matcha roll "></a>
+                    <p>Food</p>
+                </div>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Traveling to Japan?</h2>
+            <p>Take a look at the weather before your trip!</p>
+            <div id="weather_city_container">
+                <div id="weather_city_tokyo"></div>
+                <div id="weather_city_osaka"></div>
+                <div id="weather_city_kyoto"></div>
+                <div id="weather_city_search_results"></div>
+            </div>
+            <p>Don't see a city you are traveling to? Search below to view more locations </p>
+            <form>
+                <label for="jp_weather_Search">Enter location</label>
+                <input name="search" id="jp_weather_Search" type="text" placeholder=" City Name" />
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
 </body>
 </html>
