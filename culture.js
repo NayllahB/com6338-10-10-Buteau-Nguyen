@@ -58,6 +58,7 @@ const animeCard = async (animeId) => {
 //calls fetch fundtion for each anime
 [naruto, bleach, onePiece].forEach(id => animeCard (id))
 
+// Questions for the pop quiz
 var questionsArr = [
     {
         question: 'Which anime series is part of the "Big Three"?',
@@ -114,10 +115,8 @@ var questionsArr = [
 var quiz = document.getElementById('culture_quiz') 
 var currentQuestionIndex = 0
 correctAnswer = 0
-
+// Creates quiz button and shows previous score
 const startQuiz = () => {
-
-    //if local storage is not empty show previous score
     var previousScore = localStorage.getItem('previous-score')
     if(previousScore !== null){
         const previousScoreEl = document.createElement('p')
@@ -136,18 +135,16 @@ const startQuiz = () => {
     }
 }
 
+// Shows the questions and answer choices
 const showQuestion = () => {
     culture_quiz.innerHTML = '' 
-    
     var currentQuestion = questionsArr[currentQuestionIndex]
     culture_quiz.innerHTML = `<p>${currentQuestion.question}</p>`
-    
-    // creates div element (container)
+
     var answerContainer = document.createElement('div')
     answerContainer.id = 'quiz_answer_container'
     culture_quiz.appendChild(answerContainer)
 
-    // creates button elements (options)
     currentQuestion.options.forEach(function(option){
         var optionButton = document.createElement('button')
         optionButton.textContent = option
@@ -172,6 +169,7 @@ const showQuestion = () => {
 
 }
 
+//Calculates score and stores them in local storage
 const endQuiz = () => {
     var percentage = Math.round((correctAnswer/questionsArr.length) * 100);
     localStorage.setItem('previous-score', percentage)
@@ -182,3 +180,17 @@ const endQuiz = () => {
 }
 
 startQuiz()
+
+/* Update the copyright year automatically */
+function copyright () {
+    const date = document.getElementById("date");
+    const year = new Date; 
+
+    if (date) {
+        date.textContent = year.getFullYear();
+    }
+}
+
+window.onload = () => {
+    copyright();
+}
