@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title> <!--This will be the home page (Zoey + Nayllah)-->
+    <title>Home</title> 
     <meta name="description" content="Learn more about Japan"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="header__nav">
-            <ul class="header__nav__list" id="main-menu">
-              <li><a class="header__nav__link" href="index.html">Home</a></li>
-              <li><a class="header__nav__link" href="culture.html">Culture</a></li>
-              <li><a class="header__nav__link" href="news.html">News</a></li>
-            </ul>
-          </nav>
+          <ul class="header__nav__list" id="main-menu">
+            <li><a class="header__nav__link" href="index.html">Home</a></li>
+            <li><a class="header__nav__link" href="culture.html">Culture</a></li>
+            <li><a class="header__nav__link" href="news.html">News</a></li>
+          </ul>
+        </nav>
     </header>
 
     <main class="home_main_content">
@@ -27,22 +27,22 @@
             <h1>Japan</h1>
         </section>
         <section class="home_introduction">
-            <P>Explore the heart of Japanese pop culture and stay updated with the latest news straight from the streets of Japan.</P>
+            <P>Welcome to our hub for all things Japanese pop culture — from iconic anime and bold street fashion to delicious food trends and the latest news straight from Japan. Dive into a world where tradition meets innovation and creativity knows no bounds.</P>
         </section>
         <section class="home_pop-culture">
             <h2>Pop Culture</h2>
             <p>Learn more about Japan's vibrant pop culture</p>
             <div class="home_pop-culture_card-container">
                 <div class="home_pop-culture_card">
-                    <a href=""><img src="images/naruto.jpeg" alt="Naruto"></a>
-                    <p>Anime & Manga</p>
+                    <a href="culture.html"><img src="images/naruto.jpeg" alt="Naruto"></a>
+                    <p>Anime</p>
                 </div>
                 <div class="home_pop-culture_card">
-                    <a href=""><img src="images/fashion3.jpg" alt="Model posing to showcase outfit"></a>
+                    <a href="culture.html"><img src="images/fashion3.jpg" alt="Model posing to showcase outfit"></a>
                     <p>Fashion</p>
                 </div>
                 <div class="home_pop-culture_card">
-                    <a href=""><img src="images/matcha-roll-cake.jpg" alt="Matcha roll "></a>
+                    <a href="culture.html"><img src="images/matcha-roll-portrait.png" alt="Matcha roll "></a>
                     <p>Food</p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <div class="div__newsintro">
               <h2>Japan News: Stay Informed</h2>
               <p>Our news section offers a unique perspective on Japan, with articles and analysis from experts and journalists who know the country inside and out.</p>
-              <button class="div__newsintro__button">Learn more</button>
+              <button class="div__newsintro__button"><a href="news.html">Learn More</a></button>
             </div>
         </section>
 
