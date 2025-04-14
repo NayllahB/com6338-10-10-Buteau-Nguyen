@@ -167,7 +167,7 @@ footer {
 
 /* Styling for hero img on home page */
 .home_hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.5)),url(images/home-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(images/home-hero.jpg);
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -312,7 +312,7 @@ h4{
 
 /* Styling for Culture page */
 .culture_hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5)),url(images/tokyo_city.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(images/tokyo_city.jpeg);
     width: 100%;
     height: 400px;
     background-size: cover;
