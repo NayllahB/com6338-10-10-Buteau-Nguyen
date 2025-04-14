@@ -6,25 +6,37 @@
     <title>Culture</title> <!--This will be the culture Webpage (Nayllah)-->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-<body>
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <nav class="header__nav">
+          <ul class="header__nav__list" id="main-menu">
+            <li><a class="header__nav__link" href="index.html">Home</a></li>
+            <li><a class="header__nav__link" href="culture.html">Culture</a></li>
+            <li><a class="header__nav__link" href="news.html">News</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
         <section class="culture_hero">
             <h1>Japanese Pop Culture</h1>
         </section>
+        <section class="culture_introduction">
+            <p>From world-famous anime to trendsetting street fashion and playful food culture, Japan's pop scene is bold, creative, and impossible to ignore.</p>
+        </section>
         <section class="culture_main_content">
-            <section class="culture_introduction">
-                <p>From world-famous anime to trendsetting street fashion and playful food culture, Japan's pop scene is bold, creative, and impossible to ignore.</p>
-            </section>
             <section class="culture_anime">
-                <h2 class="culture_subheading">Anime and Manga</h2>
-                <p>Anime and manga are more than just art forms in Japan—they're a cultural heartbeat. Whether it's the emotional storytelling of Your Name, the action-packed adventures of Naruto, or the whimsical charm of Studio Ghibli films, anime continues to shape pop culture both in Japan and around the world. Manga, often read on the go or collected in thick volumes, spans every genre imaginable, from romance and sports to fantasy and horror. </p>
-                <div class="culture_anime_img-container">
-                    <img src="images/your-name.jpeg" alt="Your Name">
-                    <img src="images/naruto.jpeg" alt="Naruto">
-                    <img src="images/howls-moving-castle.jpeg" alt="Howls Moving Castle">
+                <h2 class="culture_subheading">Anime</h2>
+                <p>Anime is more than just art form in Japan—it's a <b>cultural heartbeat</b>. Whether it's the emotional storytelling of Your Name, the action-packed adventures of Attack on Titan, or the whimsical charm of Studio Ghibli films, anime continues to shape pop culture both in Japan and around the world.</p>
+                <p>It is also impossible to talk about anime and not mention the <b>"Big Three"</b> Naruto, Bleach, and One Piece. These three shows are known as the most popular and influential long-running shonen anime series from the 2000s era that played a major role in globalizing anime culture.</p>
+                <div class="culture_anime_card-container">
+                    <p><b>Look below to learn more about the "Big Three"</b> </p>
+                    <!-- 20 is id for Naruto -->
+                    <div id="anime_20"></div>
+                    <!-- 21 is id for One Piece -->
+                    <div id="anime_21"></div>
+                    <!-- 269 is id for Bleach -->
+                    <div id="anime_269"></div>
                 </div>
             </section>
             <section class="culture_fashion">
@@ -33,11 +45,14 @@
 
                 <p>While bold subcultures like Lolita and Decora still exist, Japan's modern street fashion is now all about blending high and low, old and new, and expressing confidence through curated, intentional style.</p>
 
+                <p><b>Click on each image to learn more about the look</b></p>
+
                 <div class="culture_fashion_img-container">
-                    <a href="https://tokyofashion.com/vintage-harajuku-style-wide-brim-hat-1980s-jacket-sailor-pants-boots/" target="_blank"><img src="images/Harajuku.jpg" alt="A Model posing showcasing outfit"><a>
-                    <a href="https://tokyofashion.com/tokyo-colorful-street-styles-furry-cap-wide-brim-hat-knit-beanie-vivienne-westwood-vintage-handmade/" target="_blank"><img src="images/fashion2.jpg" alt="Three models posing showcasing outfits"><a>
-                    <a href="https://tokyofashion.com/japanese-fashion-beauty-vintage-kimono-street-style-tokyo/" target="_blank"><img src="images/fashion3.jpg" alt="A model posing showcasing outfit"><a>
+                    <a href="https://tokyofashion.com/vintage-harajuku-style-wide-brim-hat-1980s-jacket-sailor-pants-boots/" target="_blank"><img src="images/Harajuku.jpg" alt="A Model posing showcasing outfit"></a>
+                    <a href="https://tokyofashion.com/tokyo-colorful-street-styles-furry-cap-wide-brim-hat-knit-beanie-vivienne-westwood-vintage-handmade/" target="_blank"><img src="images/fashion2.jpg" alt="Three models posing showcasing outfits"></a>
+                    <a href="https://tokyofashion.com/japanese-fashion-beauty-vintage-kimono-street-style-tokyo/" target="_blank"><img src="images/fashion3.jpg" alt="A model posing showcasing outfit"></a>
                 </div>
+                
             </section>
             <section class="culture_food">
                 <h2 class="culture_subheading">Food</h2>
@@ -50,8 +65,15 @@
                 
             </section>
         </section>
-        
+        <section class="culture_quiz_section">
+            <h2>Pop Quiz</h2>
+            <p>Let's see how much you know about Japanese pop culture</p>
+            <div id="culture_quiz"></div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Copyright &copy;<span id="date"></span> by Group 1</p>
+    </footer>
+    <script src="culture.js"></script>
 </body>
 </html>
