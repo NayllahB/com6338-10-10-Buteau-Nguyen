@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const searchInput = document.getElementById('news-search');
     const keyword = searchInput.value.trim();
-    const url = `http://api.mediastack.com/v1/news?access_key=${apiKey}&keywords=${keyword}&countries=jp&languages=en&limit=10`;
+    const url = `https://api.mediastack.com/v1/news?access_key=${apiKey}&keywords=${keyword}&countries=jp&languages=en&limit=10`;
     
     fetch(url)
     .then(response => response.json())
